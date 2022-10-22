@@ -4,10 +4,11 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import TextForm from './Components/TextForm';
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
+  <>
+  <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -45,6 +46,13 @@ function NavScrollExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+   <div className="container">
+    <TextForm heading="Enter the text to analyze"/>
+    
+    </div>
+  
+
+    </>
   );
 }
 
